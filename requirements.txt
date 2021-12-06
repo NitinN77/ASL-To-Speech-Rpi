@@ -1,0 +1,7 @@
+boto3==1.18.44
+pygame==1.9.4.post1
+numpy==1.21.4
+opencv-contrib-python==4.5.3.56
+tensorflow @ https://github.com/bitsy-ai/tensorflow-arm-bin/releases/download/v2.4.0-rc2/tensorflow-2.4.0rc2-cp37-none-linux_armv7l.whl
+geocoder==1.38.1
+geopy==2.2.0
