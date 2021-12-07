@@ -1,6 +1,6 @@
 # ASL-To-Speech-Rpi
 
-A pi setup to recognize ASL signs using a pre-trained CNN model and speak it out using a suitable TTS engine with adaptive settings.
+A pi setup to recognize ASL signs using a pre-trained CNN model and speaks it out using a suitable TTS engine with adaptive settings.
 
 ### Usage
 
@@ -8,7 +8,7 @@ A pi setup to recognize ASL signs using a pre-trained CNN model and speak it out
 1. git clone https://github.com/VoidlessVoid7/ASL-To-Speech-Rpi
 2. cd ASL-To-Speech-Rpi
 2. pip install -r requirements.txt
-3. ./SoundWire
+3. ./SoundWireServer
 4. python3 sign_detector.py
 ```
 
@@ -19,5 +19,5 @@ A pi setup to recognize ASL signs using a pre-trained CNN model and speak it out
 4. Recognized alphabets are added to a global buffer for processing.
 5. When the user has finished input, the stop sign can be shown to end the infinite loop.
 6. Once the loop breaks, all letters are mapped to their counts in a dictionary
-7. The top N values are extracted with their original starting indices in the buffer and added to create the final word
+7. The top N values are extracted with their original starting indices in the buffer and added to create the final word (the logic to handle duplicates is still in development) 
 8. The tts is then called on the extracted word with settings based on the user’s internet connectivity status and location.  
