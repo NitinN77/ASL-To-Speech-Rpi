@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
 import tensorflow as tf
+import subprocess
 
 model = tf.keras.models.load_model(r"ASLModel.h5")
 background = None
@@ -79,6 +80,7 @@ while True:
                 op = {k: v for k, v in sorted(
                     op.items(), key=lambda item: item[1][0])}
                 print(''.join(list(op)))
+                subprocess.call(["python3", "tts.py" + ''.join(list(op))])
                 break
 
             cv2.putText(frame_copy, pred_letter,
