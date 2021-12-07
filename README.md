@@ -1,6 +1,6 @@
 # ASL-To-Speech-Rpi
 
-A pi setup to recognize ASL signs using a pre-trained CNN model and speak it out using a suitable TTS engine with adaptive settings.
+A pi setup to recognize ASL signs using a pre-trained CNN model and speaks it out using a suitable TTS engine with adaptive settings.
 
 ### Usage
 
