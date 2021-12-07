@@ -8,7 +8,7 @@ A pi setup to recognize ASL signs using a pre-trained CNN model and speak it out
 1. git clone https://github.com/VoidlessVoid7/ASL-To-Speech-Rpi
 2. cd ASL-To-Speech-Rpi
 2. pip install -r requirements.txt
-3. ./SoundWire
+3. ./SoundWireServer
 4. python3 sign_detector.py
 ```
 
