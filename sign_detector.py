@@ -42,13 +42,13 @@ letters = {
 }
 
 
-def map_extract(lets):
+def map_extract(lets, limit=4):
     d = {}
     for i in range(len(lets)):
         _, c = d[lets[i]] if lets[i] in d else (lets[i], 0)
         d[lets[i]] = (i, c + 1)
     op = {k: v for k, v in sorted(d.items(), key=lambda item: item[1][1], reverse=True)}
-    op = {k: op[k] for k in list(op)[:4]}
+    op = {k: op[k] for k in list(op)[:limit]}
     op = {k: v for k, v in sorted(op.items(), key=lambda item: item[1][0])}
     return "".join(list(op))
 
